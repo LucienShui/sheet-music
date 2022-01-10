@@ -25,13 +25,13 @@
       plugins: [
         function(hook, vm) {
           hook.beforeEach(function(content) {
-            var url = 'https://github.com/LucienShui/music-score/blob/main/docs/' + vm.route.file;
+            var url = 'https://github.com/LucienShui/music-score/blob/main/' + vm.route.file;
 
             return content + '\n---\n' + '[📝 在 GitHub 上编辑此页](' + url + ')\n';
           });
           hook.afterEach(function(html, next) {
             if (location.hostname !== 'localhost') {
-              html = html.replaceAll('<img src="/', '<img src="https://cdn.jsdelivr.net/gh/LucienShui/music-score@main/');
+              html = html.replaceAll('<img src="' + location.pathname, '<img src="https://cdn.jsdelivr.net/gh/LucienShui/music-score@main/');
             }
             next(html);
           });
