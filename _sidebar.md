@@ -25,3 +25,6 @@
     * [Kass's Theme](纯音乐/Kass%27s%20Theme/)
     * [Mia & Sebastian's Theme](纯音乐/Mia%20%26%20Sebastian's%20Theme/)
     * [Secret](纯音乐/Secret/)
+
+* 其它
+    * [City of Stars](其它/City%20of%20Stars/)
